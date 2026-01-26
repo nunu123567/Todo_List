@@ -1,5 +1,10 @@
+body {
+    background-color: rgb(255, 161, 39);
+}
+
 h1 {
-    color: aquamarine;
+    color: rgb(0, 102, 105);
+    font-size: 350%;
     text-align: center;
 }
 
@@ -16,4 +21,13 @@ ul {
 
 .normal {
     color: black;
+}
+
+.removeButton {
+    background-color: red;
+    cursor: grab;
+}
+
+.removeButton:hover {
+    background-color: peachpuff;
 }
