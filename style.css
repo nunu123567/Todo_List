@@ -2,6 +2,17 @@ body {
     background-color: rgb(255, 161, 39);
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.left, .right {
+    width: 40%;
+}
+
 h1 {
     color: rgb(0, 102, 105);
     font-size: 350%;
