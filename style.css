@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 161, 39);
+    background-color: rgb(255, 181, 243);
 }
 
 .container {
@@ -14,9 +14,10 @@ body {
 }
 
 h1 {
-    color: rgb(0, 102, 105);
+    color: rgb(0, 0, 0);
     font-size: 350%;
     text-align: center;
+    
 }
 
 ul {
