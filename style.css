@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .left, .right {
@@ -15,7 +15,7 @@ body {
 
 h1 {
     color: rgb(0, 0, 0);
-    font-size: 350%;
+    font-size: 450%;
     text-align: center;
     
 }
@@ -23,7 +23,8 @@ h1 {
 ul {
     text-align: center;
     list-style-position: inside;
-    list-style-type: "☐";
+    list-style-type: square;
+    font-size: larger;
 
 }
 
@@ -36,10 +37,26 @@ ul {
 }
 
 .removeButton {
-    background-color: red;
+    background-color: deeppink;
+    border-color: deeppink;
     cursor: grab;
 }
 
 .removeButton:hover {
-    background-color: peachpuff;
+    background-color: rgb(255, 155, 208);
+}
+
+#addButton {
+    background-color: deeppink;
+    border-color: deeppink;
+    font-size: larger;
+    cursor: grab;
+}
+
+#addButton:hover {
+    background-color:rgb(255, 155, 208) ;
+}
+
+#todoInput {
+    font-size: larger;
 }
