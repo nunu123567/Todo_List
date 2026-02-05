@@ -1,34 +1,71 @@
 body {
     background-color: rgb(255, 181, 243);
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.container {
+/* Header */
+header {
+    background-color: rgb(255, 110, 110);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* Page layout */
+.page-layout {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* Navigation */
+nav {
+    width: 200px;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    flex: 1;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 100px;
+    padding: 40px;
 }
 
+/* Sections */
 .left, .right {
     width: 40%;
 }
 
-h1 {
-    color: rgb(0, 0, 0);
-    font-size: 450%;
-    text-align: center;
-    
+.note {
+    font-size: 0.9rem;
+    color: #333;
 }
 
+/* Todo list */
 ul {
     text-align: center;
     list-style-position: inside;
     list-style-type: square;
     font-size: larger;
-
 }
 
-.urgent{
+.urgent {
     color: red;
 }
 
@@ -36,10 +73,12 @@ ul {
     color: black;
 }
 
+/* Buttons */
 .removeButton {
     background-color: deeppink;
     border-color: deeppink;
     cursor: grab;
+    margin-left: 10px;
 }
 
 .removeButton:hover {
@@ -54,9 +93,22 @@ ul {
 }
 
 #addButton:hover {
-    background-color:rgb(255, 155, 208) ;
+    background-color: rgb(255, 155, 208);
 }
 
 #todoInput {
     font-size: larger;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: lightgreen;
+    text-decoration: none;
 }

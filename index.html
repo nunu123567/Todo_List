@@ -8,27 +8,55 @@
 </head>
 <body>
 
-    <h1>To Do</h1>
+    <!-- Header -->
+    <header>
+        <h1>Todo Lista (not for sensitive data)</h1>
+        <!-- login button coming later -->
+    </header>
 
-    <div class="container">
-        <div class="left">
-        <input type="text" id="todoInput" placeholder="New todo Item">
-        <br></br>
-        <button id="addButton">Add</button>
-    </div>
-    <div class="right">
-        
-        <ul id="todoList">
-        <li class="urgent">task1</li>
-        <li class="normal">task2</li>
-        <li class="normal">task3</li>
-        <li class="urgent">task4</li>
-        <li class="normal">task5</li>
-    </ul>
-    </div>
+    <!-- Page layout -->
+    <div class="page-layout">
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li>Navigation</li>
+                <li>Settings</li>
+                <li>Profile</li>
+                <li>Help</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Add new todo -->
+            <section class="left">
+                <input type="text" id="todoInput" placeholder="New todo item">
+                <br><br>
+                <button id="addButton">Add New Item</button>
+                <p class="note">
+                    (Todo list is saved in local storage, not for sensitive data)
+                </p>
+            </section>
+
+            <!-- Todo list -->
+            <section class="right">
+                <ul id="todoList"></ul>
+            </section>
+
+        </main>
 
     </div>
-    
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Todo Lista. All rights reserved.</p>
+        <a href="#">Contact Us</a>
+        <!-- contact form coming later -->
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
