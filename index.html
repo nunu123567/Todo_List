@@ -36,14 +36,16 @@
             <section class="left">
                 <input type="text" id="todoInput" placeholder="New todo item">
                 <br><br>
-                <button id="addButton">Add New Item</button>
-                <br><br>
-                <form action="/submit" method="post">
-                <select id="importance" name="importance">
-                    <option value="urgant">Urgant</option>
+                <div class="add-controls">
+                    <button id="addButton">Add New Item</button>
+
+                    <select id="importance" name="importance">
+                    <option value="urgent">Urgent</option>
                     <option value="normal">Normal</option>
-                    <option value="notUrgant">Not Urgant</option>
-                </select>
+                    <option value="notUrgent">Not Urgent</option>
+    </select>
+</div>
+
             </form>
             </section>
 
