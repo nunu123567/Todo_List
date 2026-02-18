@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>MY TODO LIST</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,21 +12,38 @@
         <h1>Contact Us!</h1>
     </header>
 
-    <form id="myForm">
-        <label for="name">Full Name</label><br>
-        <input id="FullName" placeholder="Full Name"><br><br>
-        <label for="email">E-mail</label><br>
-        <input id="Email" placeholder="E-mail"><br><br>
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea>
-        <br><br>
-        <button id="contact">Contact us</button>
-    </form>
+    <div class="page-layout">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Navigation</li>
+                <li>Settings</li>
+                <li>Profile</li>
+                <li>Help</li>
+                <li>About Us</li>
+            </ul>
+            
+        </nav>
 
-    <a href="index.html">Home</a>
+        <main>
+            <form id="myForm" action="/submit" method="post">
+            <label for="name">Full Name</label><br>
+            <input type="text" id="FullName" placeholder="Full Name" max="50" required><br><br>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="Email" placeholder="E-mail" required><br><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+            <br><br>
+            <button type="submit" id="contact">Contact us</button>
+            </form>
+
+        </main>
+    </div>
+
+    
 
     <footer>
-        <p>© 2026 Todo Lista. All rights reserved.</p>
+        <p>© 2026 Todo List. All rights reserved.</p>
     </footer>
 
 </body>

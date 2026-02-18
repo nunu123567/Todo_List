@@ -94,6 +94,7 @@ ul {
 
 #addButton:hover {
     background-color: rgb(255, 155, 208);
+    border-color: white;
 }
 
 #todoInput {
@@ -116,8 +117,6 @@ footer a {
 #myForm {
     text-align: center;
     font-size: x-large;
-    margin-top: 7%;
-    margin-bottom: 17%;
 }
 
 #contact{
@@ -150,4 +149,14 @@ footer a {
     padding: 10px 25px;
 }
 
+#importance{
+    padding: 3px 5px;
+    background-color: deeppink;
+    cursor: pointer;
+    font-size: 15px;
+}
 
+#importance:hover{
+    background-color: rgb(255, 155, 208);
+    border-color: white;
+}
