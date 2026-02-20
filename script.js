@@ -55,3 +55,26 @@ addButton.addEventListener("click", function () {
 
 
 renderTodo();
+
+async function  fetchJoke(){
+    try{
+        const response = await fetch(
+            "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit"
+        );
+
+        const data = await response.json();
+
+        const jokeElement = document.getElementById("joke");
+
+        if(data.type === "twopart") {
+            jokeElement.textContent = `${data.setup} - ${data.delivery}`;
+        } else {
+            jokeElement.textContent = data.joke;
+        }
+    } catch (error) {
+        document.getElementById("joke").textContent = "Couldn't load a joke today 😢";
+    }
+    
+}
+
+document.addEventListener("DOMContentLoaded",fetchJoke);
